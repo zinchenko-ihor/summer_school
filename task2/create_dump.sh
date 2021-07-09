@@ -11,6 +11,6 @@ mkdir ./db_dumps
 cd /home/ubuntu/db_dumps
 
 # create a dump
-mysqldump -u moodleuser -p moodle > ~/db_dumps/moodle_$current_date
+mysqldump -u moodleuser -p moodle > ~/db_dumps/moodle_$current_date.sql
 
 echo "Backup finished"
