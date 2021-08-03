@@ -1,13 +1,12 @@
 provider "aws" {
-  access_key = "AKIAQ7ZF4UHTTCIIOR4B"
-  secret_key = "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"
+  access_key = "MyAccessKey"
+  secret_key = "MySecretKey"
   region     = "eu-central-1"
 }
 
 resource "aws_key_pair" "terraform" {
   key_name   = "terraform"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCLpc47uP0MIQ3/GCCUpTm9Qq5HvadcYECNdgTW+xvahTyjgIpZ8I0g8GxUo04G+0ohritL1S45UhHUHAmV8+EM68vF6PxCQbHfolwOT/66XG5Kwm1fhr00lR5f+bGIcnmQPxeN5aTgflyatd77XOJA+vwjz9Mv+5yjzFHgMMGKrtnCPrJNK3Ck6mYHA0aYjK9wnWtZkFUxpM4WfRCkJLS8EASuWI8rLud/7l3nE/EDLhi+KID/Gf/xReS8j68wOeuhJHsl9R5JNGuysH7BKsXcOzifN/dUYpFOxyDj0IuJq5Gv/POQHj6KnLozEnSHeu+0AAaXFTxBe2M0ldPUW4yBjJF7jKQyvFmE1e2pvdfbO8v5FM+ksLtT/1dqkzdE8938ql9Wbks23Eov/rzyEyFk4FC9QE6MgQ1dmnExE3OMAAsMrYDDQ5fDSJK4O/p8bkYjP52A/tay+XTKQuTgZrooN6GiR3mSDg0YbdaRbgnMi763TpHm4epuxwbpVwGvmk= zinchi@ubuntu"
-}
+  public_key = "MyPublicSSH"}
 resource "aws_instance" "lamp"{
   ami             = "ami-05f7491af5eef733a"
   instance_type   = "t2.micro"
